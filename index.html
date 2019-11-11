@@ -23,6 +23,9 @@
         tr td:last-child *:first-child {
             width: 100%;
         }
+        tr td:last-child select {
+            width: 100%;
+        }
         tr:last-child td:last-child *:first-child {
             border: none;
         }
@@ -96,6 +99,7 @@
         }
         .navbar {
             background-color: #333;
+            height: 50px;
         }
         .navbar-inner {
             width: 1170px;
@@ -136,23 +140,22 @@
     </style>
 </head>
 <body>
-<div class="navbar">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="brand" href="https://www.bigstockphoto.com/">
-                <img class="logo" src="https://www.bigstockphoto.com/images/2017/Bigstock_logo_neg-TM.svg" alt="Bigstock" />
-            </a>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="https://www.bigstockphoto.com/">
+                    <img class="logo" src="https://www.bigstockphoto.com/images/2017/Bigstock_logo_neg-TM.svg" alt="Bigstock" />
+                </a>
+            </div>
         </div>
-    </div><!-- /navbar-inner -->
-</div>
-<div class="content">
-    <h2>Add a card</h2>
-    [[FORM INSERT]]
-    <hr />
-    <div class="privacy">
-        <a class="secondary-action">Privacy policy</a>
     </div>
-</div>
-<div style="background-color: blue; color: white;">[footer]</div>
+    <div class="content">
+        <h2>Add a card</h2>
+        [[FORM INSERT]]
+        <hr />
+        <div class="privacy">
+            <a href="https://www.bigstockphoto.com/privacy.html" class="secondary-action">Privacy policy</a>
+        </div>
+    </div>
 </body>
 </html>
