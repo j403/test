@@ -1,0 +1,161 @@
+<html>
+<head>
+    <style>
+        .creAddressOneField { display: none; }
+        .creAddressTwoField { display: none; }
+        .creAddressField { display: none; }
+        label[for="customer_address1"] { display: none; }
+        label[for="customer_address2"] { display: none; }
+        label[for="state"] { display: none; }
+        label[for="customer_city"] { display: none; }
+        label[for="customer_address"] { display: none; }
+        #state_container { display: none; }
+        .content {
+            width: 400px;
+            margin: auto;
+        }
+        tr td:first-child {
+            text-align: end;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            font-size: 0.75rem;
+        }
+        tr td:last-child *:first-child {
+            width: 100%;
+        }
+        tr td:last-child select {
+            width: 100%;
+        }
+        tr:last-child td:last-child *:first-child {
+            border: none;
+        }
+        tr td:last-child * {
+            border-color: lightgrey;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: 1px;
+            height: 28px;
+        }
+        #cresecure_cc_expires_month {
+            width: 50%;
+        }
+        #cresecure_cc_expires_year {
+            width: 47%; /* :sweat_smile: */
+        }
+        #paymentButtons td:first-child {
+            padding: 0;
+            height: unset;
+        }
+        #paymentButtons td:last-child span.main {
+            display: flex;
+            flex-direction: column-reverse;
+            height: unset;
+            border: none;
+        }
+        #paymentButtons td:last-child div {
+            border: none;
+            height: unset;
+        }
+        #submitButton {
+            background-color: #238DE5;
+            color: white;
+            height: 40px;
+            border-radius: 4px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 20px;
+        }
+        #cancelButton {
+            /* background-color: #238DE5; */
+            color: #238DE5;
+            height: 15px;
+            border: none;
+            /* border-radius: 4px; */
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            /* font-weight: bold; */
+            line-height: 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .secondary-action {
+            color: #238DE5;
+            height: 15px;
+            border: none;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            line-height: 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .privacy {
+            display: flex;
+            justify-content: center;
+        }
+        h2 {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: bold;
+        }
+        .navbar {
+            background-color: #333;
+            height: 50px;
+        }
+        .navbar-inner {
+            width: 1170px;
+        }
+        .container {
+            margin: 0 auto;
+            padding: 0;
+            width: 940px;
+            min-height: 100%;
+        }
+        .brand {
+            padding: 4px 20px 4px 0;
+            max-width: 115px;
+            margin-top: 5px;
+            margin-left: 0;
+            display: block;
+            float: left;
+            font-size: 20px;
+            font-weight: 200;
+            color: #777;
+            text-shadow: 0 1px 0 #fff;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            outline: 0;
+            cursor: pointer;
+        }
+        .logo {
+            width: 115px;
+            height: 31px;
+            border: 0;
+            margin: 0;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="https://www.bigstockphoto.com/">
+                    <img class="logo" src="https://www.bigstockphoto.com/images/2017/Bigstock_logo_neg-TM.svg" alt="Bigstock" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Add a card</h2>
+        [[FORM INSERT]]
+        <hr />
+        <div class="privacy">
+            <a href="https://www.bigstockphoto.com/privacy.html" class="secondary-action">Privacy policy</a>
+        </div>
+    </div>
+</body>
+</html>
